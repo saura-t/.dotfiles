@@ -35,9 +35,13 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id xrandr --output eDP1 --primary
 
 # set second monitor to the right on Dell-Monitor-home
-exec_always --no-startup-id xrandr --newmode 1440x900  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
-exec_always --no-startup-id xrandr --addmode DP1 1440x900
-exec_always --no-startup-id xrandr --output DP1 --mode 1440x900 --right-of eDP1
+exec_always --no-startup-id xrandr --newmode 1440x900p  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
+exec_always --no-startup-id xrandr --addmode DP1 1440x900p
+exec_always --no-startup-id xrandr --output DP1 --mode 1440x900p --right-of eDP1
+
+# Setting wallpaper for both screen0 and screen1
+#exec --no-startup-id nitrogen --set-auto /home/saurabh/.dotfiles/wallpaper/1366x768.jpg --head=0 && nitrogen --set-auto /home/saurabh/.dotfiles/wallpaper/1440x900.jpg --head=1
+exec --no-startup-id nitrogen --restore
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -192,3 +196,4 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
