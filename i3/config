@@ -35,9 +35,9 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id xrandr --output eDP1 --primary
 
 # set second monitor to the right on Dell-Monitor-home
-exec_always --no-startup-id xrandr --newmode 1440x900_60.00  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
-exec_always --no-startup-id xrandr --addmode DP1 1440x900_60.00
-exec_always --no-startup-id xrandr --output DP1 --mode 1440x900_60.00 --right-of eDP1
+exec_always --no-startup-id xrandr --newmode 1440x900  106.50  1440 1528 1672 1904  900 903 909 934 -hsync +vsync
+exec_always --no-startup-id xrandr --addmode DP1 1440x900
+exec_always --no-startup-id xrandr --output DP1 --mode 1440x900 --right-of eDP1
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
