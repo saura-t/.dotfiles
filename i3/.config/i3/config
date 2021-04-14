@@ -122,10 +122,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "I: Main"
-set $ws2 "II: "
-set $ws3 "III: "
-set $ws4 "IV:"
+set $ws1 "I: Main "
+set $ws2 "II: Chrome "
+set $ws3 "III: Editor " 
+set $ws4 "IV: Discord "  
 set $ws5 "V:"
 set $ws6 "VI:"
 set $ws7 "VII:"
@@ -171,7 +171,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Assigning applications to specific workspaces
 assign [class="Google-chrome"] $ws2
-assign [class="discord"] $ws3
+assign [class="discord"] $ws4
+assign [class="Code"] $ws3
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 3
