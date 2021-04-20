@@ -337,16 +337,16 @@ bar {
         font pango: SourceCodePro-Light 10
 
 				colors {
-                background #000000
-                statusline #CAA9FA
+                background #242424
+                statusline #D5D5D5
                 separator  #FF6E67
 
                 #                  border  backgr. text
-                focused_workspace  #FF6E67 #000000 #CAA9FA
-                active_workspace   #FF6E67 #000000 #CAA9FA
-                inactive_workspace #000000 #000000 #CAA9FA
+                focused_workspace  #242424 #D5D5D5 #242424
+                active_workspace   #D5D5D5 #242424 #D5D5D5
+                inactive_workspace #242424 #282828 #CCCACA
                 binding_mode       #CAA9FA #FF5555 #CAA9FA
-                urgent_workspace   #CAA9FA #FF5555 #000000
+                urgent_workspace   #D5D5D5 #242424 #FF6E67
 				}
 }
 
@@ -355,12 +355,12 @@ bar {
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #81A1C1 #81A1C1 #88C0D0 #D8DEE9
-  client.focused_inactive #2E3440 #2E3440 #88C0D0 #454948
-  client.unfocused        #2E3440 #2E3440 #88C0D0 #454948
-  client.urgent           #D08770 #3B4252 #88C0D0 #268BD2
+  client.focused          #849492 #849492 #ffffff #2e9ef4
+  client.focused_inactive #6e686f #6e686f #ffffff #484e50
+  client.unfocused        #6e686f #6e686f #888888 #292d2e
+  client.urgent           #e9e6e6 #BFB8B0 #ffffff #900000
   client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #3B4252
 
 # set the scrolling direction for touchpad
-exec_always --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+#exec_always --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
